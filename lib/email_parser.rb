@@ -21,7 +21,9 @@ class EmailAddressParser
         #     @email_addresses.split(" ").uniq
         # end
         @email_addresses.split(" ").map{|element| element.delete_suffix(",")}.uniq
-        # e.uniq
+        # splitting by " ", and then mapping through the array,
+        # if any element ends with "," delete the comma
+        # return only uniq elements
 
     end
 end
