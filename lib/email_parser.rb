@@ -13,7 +13,7 @@ class EmailAddressParser
    
 
     def parse 
-        comma_separated = @emails.split(",")
+        comma_separated = @emails.split(",")           #can also use regex /[,\s]+/
         fully_separated = comma_separated.map do |item|
             item.strip.split(" ")
         end 
