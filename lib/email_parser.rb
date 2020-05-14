@@ -44,3 +44,6 @@ class EmailAddressParser
      end.flatten.uniq
    end
 end
+
+#EmailAddressParser.new("g@gmail.com, thi@gmail.com").parse
+
